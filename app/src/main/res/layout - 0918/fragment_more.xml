@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_toolbar_title"></include>
+    <!-- 扫一扫 -->
+    <RelativeLayout
+        android:id="@+id/rl_scan_qrcode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height"
+        android:layout_marginTop="4dp"
+        android:background="@color/white" >
+        <View
+            android:background="@color/line_color"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"></View>
+        <ImageView
+            android:id="@+id/img_scan_qrcode"
+            android:layout_width="@dimen/remote_setting_menu_btn_width"
+            android:layout_height="@dimen/remote_setting_menu_btn_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/more_list_qrscan" />
+
+        <TextView
+            android:id="@+id/txt_"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/img_scan_qrcode"
+            android:gravity="center_vertical"
+            android:text="@string/morte_scan"
+            android:textColor="@color/optiontext_color_black"
+            android:textSize="@dimen/fontSize" />
+        <!-- 通用分割线 -->
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"></View>
+    </RelativeLayout>
+    <!-- 关于 -->
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/img_about"
+            android:layout_width="@dimen/remote_setting_menu_btn_width"
+            android:layout_height="@dimen/remote_setting_menu_btn_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/more_list_about" />
+
+        <TextView
+            android:id="@+id/txt_about"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/img_about"
+            android:gravity="center_vertical"
+            android:text="@string/morte_about"
+            android:textColor="@color/optiontext_color_black"
+            android:textSize="@dimen/fontSize" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"></View>
+    </RelativeLayout>
+    <!-- 退出登录 -->
+    <RelativeLayout
+        android:id="@+id/rl_exit_logon"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="12dp"
+        android:layout_height="50dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color"/>
+        <TextView
+            android:id="@+id/txt_exit_logon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/log_off"
+            android:textColor="@color/optiontext_color_black"
+            android:textSize="@dimen/fontSize" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/search_listview_ll"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/job_num_txt"
+            android:layout_width="50dp"
+            android:gravity="center_vertical"
+            android:text="@string/job_number"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/srarch_job_num_txt"
+            android:layout_width="100dp"
+            android:gravity="center_vertical"
+            android:text="@string/job_number"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/srarch_assetname_txt"
+            android:layout_width="50dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/srarch_assetnum_txt"
+            android:gravity="center_vertical"
+            android:text="@string/job_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

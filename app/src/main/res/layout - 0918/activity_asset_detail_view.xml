@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+   <include layout="@layout/include_toolbar_title"></include>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+      <LinearLayout
+          android:background="@color/white"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+         <!--资产  编号-->
+         <LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="50dp">
+            <TextView
+                android:id="@+id/asset_code"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/optiontext_color_black"
+                android:text="@string/device_num"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/asset_code_txt"
+                android:layout_width="wrap_content"
+                android:textColor="@color/optiontext_color_black"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent" />
+         </LinearLayout>
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+            android:background="@color/line_color"/>
+         <!--资产  名称-->
+         <LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/optiontext_color_black"
+                android:text="@string/asset_name"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/asset_name_txt"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/optiontext_color_black"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent" />
+         </LinearLayout>
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="@color/line_color"/>
+         <!--实际存储地点-->
+         <LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="50dp">
+            <TextView
+                android:text="@string/realplace"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/optiontext_color_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/asset_realPlace_txt"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:textColor="@color/optiontext_color_black"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent" />
+         </LinearLayout>
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="@color/line_color"/>
+         <!--实际保管人-->
+         <LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="50dp">
+            <TextView
+                android:text="@string/real_person"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/optiontext_color_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/asset_realper_txt"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/optiontext_color_black"
+                android:layout_height="match_parent" />
+         </LinearLayout>
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="@color/line_color"/>
+         <!--验收状态-->
+         <LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="50dp">
+            <TextView
+                android:text="@string/process_mode"
+                android:gravity="center_vertical"
+                android:textColor="@color/optiontext_color_black"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/asset_state_txt"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/optiontext_color_black"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+         </LinearLayout>
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="@color/line_color"/>
+         <!--部门名称-->
+         <LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="50dp">
+            <TextView
+                android:text="@string/part_name"
+                android:gravity="center_vertical"
+                android:textColor="@color/optiontext_color_black"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/asset_partname_txt"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/optiontext_color_black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+         </LinearLayout>
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="@color/line_color"/>
+      </LinearLayout>
+   </ScrollView>
+</LinearLayout>

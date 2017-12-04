@@ -1,0 +1,128 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/capture_containter"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/qrcode_frame_icon" >
+
+        <SurfaceView
+            android:id="@+id/surfaceview"
+            android:background="@color/qrcode_transparent_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:id="@+id/rl_qrcode_scan"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.mobile.tiandy.asset.more.QRCodeView
+                android:id="@+id/top_mask"
+                android:layout_width="258dp"
+                android:layout_height="258dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/app_name"
+                android:layout_marginTop="87dp">
+            </com.mobile.tiandy.asset.more.QRCodeView>
+            <ImageView
+                android:background="@drawable/qrcode_frame_icon"
+                android:layout_marginTop="87dp"
+                android:layout_width="258dp"
+                android:layout_height="258dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/capture_crop_layout"
+            android:layout_width="258dp"
+            android:layout_height="258dp"
+            android:layout_marginTop="87dp"
+            android:layout_centerHorizontal="true"
+             >
+            <ImageView
+                android:id="@+id/capture_scan_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/qrcode_line_icon"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <include layout="@layout/include_toolbar_title"/>
+        </RelativeLayout>
+            />
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:background="@color/navigation_bar_bg" >-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/qrcode_back"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:background="@drawable/back_button_selector" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/img_openpic"-->
+                <!--android:layout_width="22dp"-->
+                <!--android:layout_height="18dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:background="@drawable/qrcode_select_img"-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:text="@string/device_device_qrcode_title"-->
+                <!--android:textColor="@color/text_color"-->
+                <!--android:textSize="20dp" />-->
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/rl_explain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_qrcode_scan"
+            >
+
+            <TextView
+                android:id="@+id/explain"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="23dp"
+                android:text="@string/device_device_qrcode_notice"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <!-- 闪光灯 -->
+        <ImageView
+            android:id="@+id/light_img"
+            android:layout_below="@id/rl_explain"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:gravity="center"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/qrcode_light"
+        />
+    </RelativeLayout>
+
+</FrameLayout>

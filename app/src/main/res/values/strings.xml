@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">码上资产通</string>
+    <string name="tabbar_bottom_mine">资产</string>
+    <string name="tabbar_bottom_search">查询</string>
+    <string name="tabbar_bottom_more">更多</string>
+    <string name="mainframe_whethertoquit">再按一次退出</string>
+    <!-- loading 加载 -->
+    <string name="text_gif_loading">加载中</string>
+    <string name="hint_input_job_num">请输入工号</string>
+    <string name="hint_input_job_num_and_name">请输入工号或设备编号</string>
+    <string name="hint_input_name">请输入用户名</string>
+    <string name="name_is_empty">用户名不能为空</string>
+    <string name="hint_input_job_password">请输入密码</string>
+    <string name="job_number">工号:</string>
+    <string name="password">密码:</string>
+    <string name="username">姓名:</string>
+    <string name="logon_in">登录</string>
+    <string name="register">注册</string>
+    <string name="user">用户</string>
+    <string name="register_at_once">立即注册</string>
+    <string name="job_num_is_empty">工号不能为空</string>
+    <string name="username_is_error">用户名错误</string>
+    <string name="password_is_empty">密码不能为空</string>
+    <string name="password_is_error">密码错误</string>
+    <string name="log_off">退出登录</string>
+    <string name="my_asset">我的资产</string>
+    <string name="register_info">提示:手机端暂不支持密码修改,请您牢记密码!</string>
+    <string name="network_error">网络异常</string>
+    <string name="network_unknown_host_error">域名错误或域名服务器异常</string>
+    <string name="network_socket_timeout_error">网络连接超时</string>
+    <!--扫一扫-->
+    <string name="device_device_qrcode_notice">请将二维码置于扫描框内</string>
+    <string name="device_device_qrcode_image_format_error">图片格式有误</string>
+    <string name="device_device_qrcode_image_select">选择二维码图片</string>
+    <string name="device_device_qrcode">二维码扫描</string>
+    <!--我的-->
+    <string name="device_num">资产编号:</string>
+    <string name="asset_name">资产名称:</string>
+    <string name="process_mode">认证状态:</string>
+    <string name="authenticated">已认证</string>
+    <string name="unauthorized">未认证</string>
+    <string name="qrcode_authenticate">(扫码认证)</string>
+    <string name="realplace">实际存储地点:</string>
+    <string name="real_person">实际保管人:</string>
+    <string name="part_name">部门名称:</string>
+    <string name="get_myasset_failed">获取资产信息失败</string>
+    <string name="asset_list_no_data">暂无数据</string>
+    <string name="check_asset_no_more">已加载全部数据</string>
+    <string name="asset_detail">资产详情</string>
+    <!--登录注册-->
+    <string name="login_failed">登录失败</string>
+    <string name="register_failed">注册失败</string>
+    <string name="please_input_username">请输入用户名</string>
+
+    <!--扫码界面-->
+    <string name="asset_check_failed">认证失败，请联系管理员</string>
+    <string name="asset_check_success">认证成功,是否继续?</string>
+    <string name="asset_check_mismatch">当前资产不属于您的个人资产，是否继续？</string>
+    <!--dialog-->
+    <string name="common_dialog_hint">提示</string>
+    <string name="common_dialog_cancel">取消</string>
+    <string name="common_dialog_ok">确认</string>
+    <!--更多-->
+    <string name="morte_scan">扫一扫</string>
+    <string name="morte_about">关于</string>
+    <string name="logoff_hint">确定要退出登录吗？</string>
+    <string name="app_version_mark">版本号：V</string>
+    <string name="company_name">天地伟业技术有限公司</string>
+    <string name="company_introduce">\t\t\t\t码上资产通是天地伟业技术有限公司基于高效的、方便的管理与统计公司内部的固定资产而研发的一个应用程序，它是通过扫描固定资产的二维码或条码来验证固定资产的相关信息</string>
+    <string name="asset_check_coid">所属工号:</string>
+    <string name="asset_person">认证人员:</string>
+    <string name="asset_immediate_authentication">立即认证</string>
+    <string name="asset_info">资产信息</string>
+    <string name="asset_input_person_name">请输入认证人员姓名</string>
+    <string name="asset_search_place">请选择地点</string>
+    <string name="asset_position">资产位置:</string>
+</resources>

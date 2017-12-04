@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="green_light">#41D228</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <!-- loading 字体颜色 -->
+    <color name="gif_loading">#afafaf</color>
+    <color name="optiontext_color_black">#333333</color>
+    <color name="mainfragment_view">#006FBD</color>
+    <color name="common_txt_bg">#dbdbdd</color>
+    <!-- 各界面列表下划线颜色 -->
+    <color name="line_color">#DDDDDD</color>
+    <color name="qrcode_transparent_bg">#99000000</color>
+    <color name="hint_text_color">#999999</color>
+    <color name="xml_bg">#F6F7FE</color>
+    <color name="asset_child">#666666</color>
+    <color name="read">#FEF70418</color>
+</resources>

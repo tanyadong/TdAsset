@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "F:\\Tiandy\\Android\\TdAsset\\library\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "F:\\Tiandy\\Android\\TdAsset\\library\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "3,4,5,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "234,287,341,393",
+                        "endColumns": "52,53,51,46",
+                        "endOffsets": "282,336,388,435"
+                    },
+                    "to": {
+                        "startLines": "8,9,10,11",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "840,893,947,999",
+                        "endColumns": "52,53,51,46",
+                        "endOffsets": "888,942,994,1041"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\recyclerview-v7-24.2.1.aar\\9b102a27c5f2511463f4676b5eb1427f\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "3,4,5,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "372,447,523,595",
+                        "endColumns": "74,75,71,65",
+                        "endOffsets": "442,518,590,656"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "551,626,702,774",
+                        "endColumns": "74,75,71,65",
+                        "endOffsets": "621,697,769,835"
+                    }
+                }
+            ]
+        }
+    ]
+}

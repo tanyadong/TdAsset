@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_asset_num"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:textColor="@color/optiontext_color_black"
+            android:text="@string/device_num"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/txt_asset_device_num"
+            android:textColor="@color/optiontext_color_black"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_asset_name"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:textColor="@color/optiontext_color_black"
+            android:text="@string/asset_name"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/txt_asset_device_name"
+            android:textColor="@color/optiontext_color_black"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_asset_state"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:textColor="@color/optiontext_color_black"
+            android:text="@string/process_mode"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/txt_asset_process_state"
+            android:textColor="@color/optiontext_color_black"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

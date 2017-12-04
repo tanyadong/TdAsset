@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+     >
+    <LinearLayout
+        android:id="@+id/ll_asset_detail_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/include_toolbar_title"></include>
+        <LinearLayout
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:text="@string/device_num"
+                android:gravity="center"
+                android:textColor="@color/optiontext_color_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/txt_asset_id"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/optiontext_color_black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!--所属工号-->
+        <LinearLayout
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:text="@string/asset_check_coid"
+                android:gravity="center"
+                android:textColor="@color/optiontext_color_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/txt_asset_jobid"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/optiontext_color_black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!--保管人员-->
+        <LinearLayout
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:text="@string/asset_person"
+                android:gravity="center"
+                android:textColor="@color/optiontext_color_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/edit_asset_person"
+                    android:gravity="center_vertical"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="@string/asset_input_person_name"
+                    android:textSize="12dp"
+                    android:textColor="@color/optiontext_color_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line_color"
+                    android:layout_alignParentBottom="true"></View>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!--所属地点-->
+        <LinearLayout
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:text="@string/asset_position"
+                android:gravity="center"
+                android:textColor="@color/optiontext_color_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:id="@+id/rl_asset_realplace"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/edit_asset_realplace"
+                    android:gravity="center_vertical"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="@string/asset_search_place"
+                    android:textColor="@color/optiontext_color_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line_color"></View>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ll_register"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/register_btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:id="@+id/txt_authentication"
+            android:text="@string/asset_immediate_authentication"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

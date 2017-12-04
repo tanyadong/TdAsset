@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/asset_place_title"
+        android:text="@string/asset_search_place"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <GridView
+        android:id="@+id/asset_place_gridview"
+        android:layout_above="@+id/txt_asset_place_cancel"
+        android:numColumns="3"
+        android:layout_below="@+id/asset_place_title"
+        android:listSelector="#00000000"
+        android:cacheColorHint="#00000000"
+        android:horizontalSpacing="15dp"
+        android:verticalSpacing="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:stretchMode="columnWidth"
+        android:fadeScrollbars="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </GridView>
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/asset_place_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_color"></View>
+    <TextView
+        android:id="@+id/txt_asset_place_cancel"
+        android:text="@string/common_dialog_cancel"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/gif_background"
+            android:gravity="center" >
+            <!--新版本加载图 使用gif-->
+            <ImageView
+                android:id="@+id/img_gif"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_below="@id/img_gif"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/gif_loading"
+                android:textSize="12sp"
+                android:text="@string/text_gif_loading"/>
+
+            <!--老版本加载图 以下 -->
+            <!--<ProgressBar-->
+                <!--android:id="@+id/pgb_common_circle"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:indeterminateDrawable="@drawable/include_progressbar_login" />-->
+            <!-- android:indeterminateDrawable="@drawable/frame_loading"几张图片轮换转圈 -->
+            <!-- android:indeterminateDrawable="@drawable/loading_progressbar"一张图片实现转圈 -->
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

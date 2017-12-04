@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_asset_realplace"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_popup_gridview"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_asset_realplace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/optiontext_color_black"
+            android:textSize="@dimen/fontSize" />
+    </LinearLayout>
+
+</LinearLayout>

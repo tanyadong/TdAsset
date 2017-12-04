@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <View
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color"/>
+        <LinearLayout
+            android:layout_toLeftOf="@+id/asset_img"
+            android:orientation="vertical"
+            android:id="@+id/search_listview_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/job_num_txt"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/job_number"
+                    android:textColor="@color/optiontext_color_black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/srarch_job_num_txt"
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/optiontext_color_black"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/optiontext_color_black"
+                    android:layout_marginLeft="30dp"
+                    android:singleLine="true"
+                    android:text="@string/username"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/srarch_username_txt"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/optiontext_color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/asset_name_and_num"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/srarch_assetname_txt"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/optiontext_color_black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/srarch_assetnum_txt"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/optiontext_color_black"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/asset_img"
+            android:src="@drawable/moredetails_arrow"/>
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color"/>
+    </RelativeLayout>
+
+</RelativeLayout>
