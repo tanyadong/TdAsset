@@ -97,7 +97,6 @@ public class MfrmSearchController extends BaseFragmentController implements
 		mHasLoadedOnce = true;
 	}
 
-
 	@Override
 	public void onResume() {
 		super.onResume();

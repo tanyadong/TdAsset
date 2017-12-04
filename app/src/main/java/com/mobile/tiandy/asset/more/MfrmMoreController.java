@@ -106,14 +106,15 @@ public class MfrmMoreController extends BaseFragmentController implements
 		new CommomDialog(context, R.style.dialog, getResources().getString(R.string.logoff_hint), new CommomDialog.OnCloseListener() {
 			@Override
 			public void onClick(Dialog dialog) {
-				Intent intent = new Intent(context, MfrmLoginController.class);
-				startActivity(intent);
-				getActivity().finish();
+				dialog.dismiss();
 			}
 
 			@Override
 			public void onClickContinue(Dialog dialog) {
 				dialog.dismiss();
+				Intent intent = new Intent(context, MfrmLoginController.class);
+				startActivity(intent);
+				getActivity().finish();
 			}
 		}).show();
 	}

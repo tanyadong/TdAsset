@@ -8,6 +8,7 @@ import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -120,6 +121,10 @@ public class MfrmAssetCheckDetailView extends BaseView implements AssetPlaceGrid
 		});
 	}
 
+	private void closeSoftKeyboard(EditText editText) {
+		InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
+		imm.hideSoftInputFromWindow(editText.getWindowToken(), 0) ;
+	}
 	/**
 	 * @author tanyadong
 	 * @Title: showPopupWindow
@@ -128,6 +133,7 @@ public class MfrmAssetCheckDetailView extends BaseView implements AssetPlaceGrid
 	 */
 	
 	public void  showPopupWindow() {
+		closeSoftKeyboard(inputPersonEdit);
 		// 设置弹出窗体显示时的动画，从底部向上弹出
 		popupWindow.setBackgroundDrawable(new BitmapDrawable());
 		popupWindow.showAtLocation(this, Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 0);
@@ -161,10 +167,11 @@ public class MfrmAssetCheckDetailView extends BaseView implements AssetPlaceGrid
 					T.showShort(context, "请输入认证人员姓名");
 					return;
 				}
-				if (realPlace.equals(getResources().getString(R.string.asset_search_place))) {
+				if (realPlace.equals("") || realPlace.isEmpty()) {
 					T.showShort(context, getResources().getString(R.string.asset_search_place));
 					return;
 				}
+
 				if (super.delegate instanceof MfrmAssetCheckDetailDelegate) {
 					((MfrmAssetCheckDetailDelegate) super.delegate).onClickAuthentication(jobid, codeid, realPlace, assetPerson);
 				}

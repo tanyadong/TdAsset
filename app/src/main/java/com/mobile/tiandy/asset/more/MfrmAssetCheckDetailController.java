@@ -70,25 +70,6 @@ public class MfrmAssetCheckDetailController extends BaseController implements
 		queue = NoHttp.newRequestQueue();
 	}
 
-
-
-	/**
-	 * @author tanyadong
-	 * @Title checkAsset
-	 * @Description 验证固定资产
-	 * @date 2017/9/11 9:08
-	 */
-	private void checkAsset(String jobid, String codeid) {
-		String uri = AppMacro.REQUEST_URL + "/asset/check";
-		Request<String> request = NoHttp.createStringRequest(uri);
-		request.cancelBySign(cancelObject);
-		request.add("jobid", jobid);
-		request.add("codeid", codeid);
-//		request.add("realPlace", );
-//		request.add("realSaver", )
-		queue.add(0, request, this);
-	}
-
 	/**
 	 * @author liuchenghe
 	 * @Title: onResume
